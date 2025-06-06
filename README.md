@@ -1,13 +1,14 @@
 # Girlfriend-s_Menu
-Projeto Girlfriend-s_Menu !!Antes de começar a desenvolver
+Projeto Girlfriend-s_Menu!!!
+Antes de começar a desenvolver:
 
-Clonar ou repositório
+Clonar o repositório.
 
-Use o comando:git clone git@github.com:thaisnascimento2308/Girlfriend-s_Menu.git Entre na pasta do repositório que você acabou de clonar: cd thais-nascimento-Girlfriend-s_Menu
+Use o comando:git clone git@github.com:thaisnascimento2308/Girlfriend-s_Menu.git. Entre na pasta do repositório que você acabou de clonar: cd thais-nascimento-Girlfriend-s_Menu
 
-Crie um branch a partir do branchmain Verifique se você está na filialmain Exemplo:git branch Se você não estiver, mude para um branchmain Exemplo:git checkout main
+Crie um branch a partir do branch main. Verifique se você está na filial main. Exemplo:git branch. Se você não estiver, mude para um branch main. Exemplo:git checkout main
 
-Agora, crie uma filial para qual você vai submeter commitso seu projeto: Você deve criar uma branch no seguinte formato: nome-sobrenome-nome-do-projeto; Exemplo:git checkout -b thais-nascimento-Girlfriend-s_Menu Crie / altere os arquivos que você precisa para desenvolver os requisitos
+Agora, crie uma filial para qual você vai submeter commits do seu projeto: Você deve criar uma branch no seguinte formato: nome-sobrenome-nome-do-projeto; Exemplo:git checkout -b thais-nascimento-Girlfriend-s_Menu Crie / altere os arquivos que você precisa para desenvolver os requisitos
 
 Adicione as mudanças ao palco do Git e faça um commit
 
