@@ -1,0 +1,116 @@
+/*   RESET GERAL   */
+* { /* Seleciona todos os elementos */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove espaçamentos internos padrão */
+  box-sizing: border-box; /* Faz com que padding e border não aumentem a largura/altura dos elementos */
+}
+
+/*   CORPO DA PÁGINA   */
+body {
+  background-color: #fefcfb; /* Define uma cor de fundo clara */
+  font-family: 'Quicksand', sans-serif; /* Fonte principal do corpo do site */
+  margin: 10px; /* Espaço externo ao redor do body */
+  padding: 10px; /* Espaço interno do body */
+}
+
+/*   ÁREA PRINCIPAL   */
+main {
+  margin-top: 0; /* Remove margem superior para manter o conteúdo encostado no topo */
+}
+
+/*   SEÇÃO DO TÍTULO PRINCIPAL   */
+main #menu {
+  display: flex; /* Ativa o layout flexível */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  max-width: 600px; /* Limita a largura máxima da caixa */
+  margin: auto; /* Centraliza horizontalmente */
+  padding: 10px; /* Espaçamento interno da caixa */
+  background-color: #f1c2c2; /* Cor de fundo rosada suave */
+  flex-wrap: wrap; /* Permite quebra de linha dos itens se necessário */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona sombra suave */
+  border-radius: 16px; /* Cantos arredondados */
+}
+
+/*   CONTEÚDO DAS SEÇÕES   */
+.menu-content {
+  text-align: center; /* Centraliza o texto */
+  max-width: 90%; /* Limita a largura do conteúdo para melhor leitura */
+  width: 100%; /* Garante que o conteúdo ocupe toda a largura disponível */
+  font-family: 'Playfair Display', serif; /* Usa fonte elegante para títulos */
+  font-size: 1rem; /* Tamanho base do texto */
+  color: #6d351a; /* Cor escura para o texto */
+  margin: 20px auto; /* Espaçamento vertical com centralização */
+}
+
+/*   SUBTÍTULOS (Ex: Entrada, Prato Principal)   */
+.menu-sub-title {
+  margin-bottom: 1rem; /* Espaço inferior entre o subtítulo e os itens */
+  border-bottom: 1px solid #e0cfc2; /* Linha sutil de separação */
+  padding-bottom: 10px; /* Espaço abaixo do texto do subtítulo */
+  color: #21243D; /* Cor escura para destaque */
+}
+
+/*   NOME DOS ITENS DO CARDÁPIO  */
+.item {
+  font-family: 'Playfair Display', serif; /* Usa fonte elegante */
+  font-size: 1rem; /* Tamanho padrão para os nomes dos itens */
+  color: #543f38; /* Cor marrom suave */
+  margin: 0.5rem 0; /* Espaço acima e abaixo do item */
+}
+
+/*   DESCRIÇÃO DOS ITENS   */
+.descricao {
+  font-size: 1rem; /* Tamanho padrão de leitura */
+  color: #5d4037; /* Cor escura legível */
+  margin: 5px 0 20px 0; /* Espaçamento superior pequeno e inferior maior */
+}
+
+/*   RODAPÉ   */
+#footer {
+  background-color: #000000; /* Fundo preto */
+  color: #FFFFFF; /* Texto branco */
+  padding: 1rem; /* Espaço interno */
+  text-align: center; /* Centraliza o texto */
+  display: flex; /* Ativa flexbox */
+  flex-direction: column; /* Itens em coluna */
+  gap: 1rem; /* Espaço entre os elementos */
+  align-items: center; /* Alinha os elementos ao centro */
+  font-size: 1rem; /* Tamanho padrão de texto */
+}
+
+
+/*   RESPONSIVIDADE PARA TELAS MENORES  */
+@media (max-width: 768px) { /* Aplica estilos somente para telas com até 768px */
+  
+  body {
+    margin: 5px; /* Reduz margens para telas menores */
+    padding: 5px; /* Reduz paddings */
+  }
+
+  .menu-content {
+    font-size: 0.95rem; /* Reduz levemente o tamanho do texto */
+    padding: 10px; /* Adiciona espaço interno */
+  }
+
+  .item {
+    font-size: 0.95rem; /* Diminui um pouco o tamanho dos títulos dos itens */
+  }
+
+  .descricao {
+    font-size: 0.9rem; /* Tamanho menor para a descrição dos pratos */
+  }
+
+  main #menu {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    padding: 1rem; /* Adiciona espaço interno */
+    width: 100%; /* Ocupa toda a largura */
+    max-width: 100%; /* Remove a limitação da largura */
+    border-radius: 0; /* Remove o arredondamento para melhor encaixe em telas pequenas */
+  }
+
+  #footer {
+    font-size: 0.9rem; /* Reduz tamanho do texto no rodapé */
+    padding: 0.5rem; /* Reduz espaçamento */
+  }
+}

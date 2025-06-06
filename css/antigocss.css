@@ -1,0 +1,84 @@
+/* Resetando margens e paddings padrões, e aplicando box-sizing para facilitar o controle de layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+  background-color: #fefcfb; /* Cor de fundo clara */
+  display: flex; /* Exibe os elementos filhos em linha (ou em coluna, dependendo do contexto) */
+  font-family: 'Quicksand', sans-serif; /* Fonte principal do corpo */
+  margin: 10px; /* Remove margens padrão */
+  padding: 10px; /* Espaçamento interno nas bordas da página */
+}
+
+/* SECTION MENU */
+
+/* Espaçamento superior da área principal (main) */
+main {
+  margin-top: 0; /* Adiciona uma margem superior de 6rem */
+}
+
+/* Estilo para o título principal do cardápio */
+
+main #menu {
+  display: flex; /* Layout flexível para os itens do menu */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  max-width: 600px; /* Largura máxima da caixa do menu */
+  margin: auto; /* Centraliza o menu horizontalmente na página */
+  padding: 10px; /* Espaçamento interno */
+  background-color: #f1c2c2; /* Cor de fundo suave para o cardápio */
+  flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar profundidade */
+  border-radius: 16px; /* Cantos arredondados */
+}
+
+/* Container do conteúdo textual do menu*/
+.menu-content {
+  text-align: center; /* Centraliza os textos do conteúdo */
+  max-width: 1500px; /* Limita a largura para manter boa leitura */
+  font-family: 'Playfair Display', serif; /* Fonte serifada elegante */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1rem; /* Tamanho grande para destaque */
+  color: #4e342e; /* Cor escura elegante */
+  margin-bottom:20px; /* Espaçamento inferior */
+}
+
+/* Subtítulo de cada seção de menu (ex: entrada, pratos principais, sobremesas, etc.) */
+.menu-sub-title {
+  margin-bottom: 20px; /* Espaço inferior entre seções */
+  border-bottom: 1px solid #e0cfc2; /* Linha de separação sutil */
+  padding-bottom: 10px; /* Espaço interno abaixo do texto */
+  color: #21243D; /* Cor mais escura e forte para o subtítulo */
+  margin-bottom: 1rem; /* Espaço abaixo do subtítulo */
+}
+
+/* Títulos dos itens do cardápio */
+.item {
+  font-family: 'Playfair Display', serif; /* Mesma fonte elegante dos títulos */
+  font-size: 1rem; /* Tamanho intermediário */
+  margin: 0; /* Remove margem padrão */
+  color: #6d4c41; /* Cor complementar ao título */
+}
+
+/* Descrição de cada item do cardápio */
+.descricao {
+  font-size: 1rem; /* Tamanho padrão de texto */
+  color: #5d4037; /* Cor escura e legível */
+  margin: 5px 0; /* Espaço entre os itens */
+}
+
+/*Footer*/
+#footer {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
