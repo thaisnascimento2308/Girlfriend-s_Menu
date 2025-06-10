@@ -114,3 +114,65 @@ main #menu {
     padding: 0.5rem; /* Reduz espaçamento */
   }
 }
+
+/*   CORAÇÕES  */
+/* Container fixo que cobre toda a tela para exibir os corações flutuando */
+.coracoes-container {
+  position: fixed;/* Fixa o container na tela, mesmo ao rolar */
+  top: 0;
+  left: 0;
+  pointer-events: none;/* Permite clicar nos elementos abaixo dos corações */
+  width: 100%;/* Ocupa toda a largura da tela */
+  height: 100%;/* Ocupa toda a altura da tela */
+  overflow: hidden;/* Esconde os corações que saem da tela */
+  z-index: 1;/* Garante que fiquem atrás do conteúdo principal */
+}
+
+/* Coração individual */
+.heart {
+  position: absolute; /* Posicionamento livre dentro do container */
+  width: 20px;
+  height: 20px;
+  background-color: red;    /* Cor do coração */
+  transform: rotate(45deg); /* Rotaciona para formar o "V" do coração */
+  animation: float 8s infinite ease-in; /* Aplica a animação de flutuar */
+}
+
+/* Forma do coração usando dois círculos */
+.heart::before,
+.heart::after {
+  content: ""; /* Elemento vazio para criar os círculos */
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red; /* Mesma cor do coração */
+  border-radius: 50%; /* Deixa os elementos circulares */
+}
+
+/* Círculo superior do lado direito */
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+/* Círculo superior do lado esquerdo */
+.heart::after {
+  left: -10px;
+  top: 0;
+}
+
+/* Animação de flutuação dos corações */
+@keyframes float {
+  0% {
+    bottom: -10%;/* Começa fora da tela na parte inferior */
+    left: calc(100% * var(--random));/* Usa a variável aleatória para posição horizontal */
+    opacity: 1;/* Visível no início */
+    transform: scale(1.5) rotate(0deg);/* Começa pequeno e sem rotação */
+  }
+  100% {
+    bottom: 110%;/* Termina fora da tela na parte superior */
+    left: calc(100% * var(--random));/* Mantém a mesma posição horizontal */
+    opacity: 0;/* Vai desaparecendo */
+    transform: scale(3) rotate(50);/* Aumenta de tamanho e gira */
+  }
+}
