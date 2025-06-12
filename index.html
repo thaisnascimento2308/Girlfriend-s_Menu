@@ -63,10 +63,6 @@
             frescor do pepino e o aroma delicado da hortelã — perfeita para limpar o paladar e
             acompanhar sabores tropicais.
           </p>
-          <h3 class="item">🍷 Beijo Roxo</h3>
-          <p class="descricao">
-            Natural e puro, feito com uvas selecionadas para um sabor intenso e refrescante.
-          </p>
         </div>
 
         <div class="coracoes-container">
@@ -81,7 +77,23 @@
           <p>&copy; 12 de Junho 2025 - Girlfriend's Menu - Royal e Coringa. Todos os direitos reservados.</p>
         </div>
       </footer>
-    
+    <div>
+      <!-- Player de áudio oculto que toca automaticamente e em loop -->
+      <audio id="bg-music" autoplay loop>
+      <!-- Caminho do arquivo de áudio .mp3 -->
+        <source src="audio/TIAGO IORC - Amei Te Ver (Clipe Oficial).mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+        </audio>
+    </div>
+    <div>
+      <!-- Botão para tocar e pausar a música -->
+      <button id="botao-musica" class="btn-musica">🎵 Tocar música</button>
+      <!-- Player de música com autoplay desativado -->
+      <audio id="bg-music" loop>
+        <source src="audio/eu-amei-te-ver.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+    </div>
     </main>
 
     <script src="src/index.js" defer></script> <!-- conexão com JavaScript -->
