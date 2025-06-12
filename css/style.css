@@ -176,3 +176,30 @@ main #menu {
     transform: scale(3) rotate(50);/* Aumenta de tamanho e gira */
   }
 }
+
+/* Botão romântico para tocar música */
+
+audio {
+  display: none;
+}
+
+.btn-musica {
+  background-color: #f1c2c2;
+  color: #6d351a;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+  margin: 20px auto;
+  display: block;
+}
+
+.btn-musica:hover {
+  background-color: #fbbebe;
+}
+
+

@@ -25,3 +25,23 @@ function criarCoracao() {
 
 // Chama a função 'criarCoracao' a cada 500 milissegundos (meio segundo)
 setInterval(criarCoracao, 500);
+
+//MÚSICA
+// Seleciona o áudio e o botão
+const musica = document.getElementById('bg-music');
+const botaoMusica = document.getElementById('botao-musica');
+
+// Estado inicial: música pausada
+let tocando = false;
+
+// Quando clicar no botão...
+botaoMusica.addEventListener('click', () => {
+  if (tocando) {
+    musica.pause();
+    botaoMusica.textContent = '🎵 Tocar música';
+  } else {
+    musica.play();
+    botaoMusica.textContent = '⏸️ Pausar música';
+  }
+  tocando = !tocando;
+});
